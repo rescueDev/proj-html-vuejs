@@ -1,0 +1,42 @@
+/* regole generali */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* contenitore generale e app Vue */
+
+/* centratura ricorrente pagina */
+.centratura {
+  margin: 0 20%;
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 60px;
+  /* debug */
+  background-color: #24333d;
+}
+
+/*aside orari header */
+#orari {
+  width: 30%;
+  color: white;
+  display: flex;
+}
+
+/* contenitore info dentro header */
+#container-info {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#contatti {
+  width: 30%;
+  color: white;
+  display: flex;
+}
