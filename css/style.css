@@ -10,7 +10,7 @@
 
 /* centratura ricorrente pagina */
 .centratura {
-  margin: 0 20%;
+  margin: 0 10%;
 }
 
 /* header */
@@ -33,10 +33,20 @@
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 #contatti {
-  width: 30%;
+  width: 60%;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#phone,
+#mail,
+#social {
+  width: 20%;
   display: flex;
 }
