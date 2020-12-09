@@ -10,7 +10,8 @@
 
 /* centratura ricorrente pagina */
 .centratura {
-  margin: 0 10%;
+  padding: 0 10%;
+  width: 100%;
 }
 
 /* header */
@@ -37,16 +38,128 @@
 }
 
 #contatti {
-  width: 60%;
+  width: 35%;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 #phone,
 #mail,
 #social {
-  width: 20%;
   display: flex;
+}
+
+/*sezione jumbo*/
+#jumbo {
+  width: 100%;
+  height: 700px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.45)),
+    url(../img/hero-image.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+/* nav bar*/
+nav {
+  /* display: flex;
+  align-self: flex-start; */
+  height: 60px;
+  background-color: blue;
+}
+
+#jumbotron {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/* contenitore testo jumbotron*/
+#jumbo-text {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#j-text {
+  width: 50%;
+  margin: 20px auto;
+}
+
+#j-text h1 {
+  font-size: 55px;
+}
+
+#jumbo-buttons button {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/*sezione obiettivi*/
+#obiettivi {
+  width: 100%;
+  height: 400px;
+  background-color: #e3e7df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cont-obj {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*singole schede obiettivi*/
+.obj {
+  width: 30%;
+  min-height: 200px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* sezione about */
+#about-company {
+  width: 100%;
+  height: 700px;
+  background-color: white;
+}
+
+/*centratura sfalsata sezione*/
+#ab-centra {
+  margin-left: 10%;
+  border: 1px solid black;
+  border: 1px solid black;
+  height: 700px;
+  display: flex;
+}
+
+/*aside testo about left*/
+#about-text {
+  width: 40%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+/*contenitore testo sez sinistra about*/
+#text-about-cont {
+  width: 50%;
+}
+/*aside right con immagine about*/
+#about-img {
+  width: 60%;
+  background-image: url(../img/about-3.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
 }
