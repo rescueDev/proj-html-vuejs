@@ -10,7 +10,7 @@
 
 /* centratura ricorrente pagina */
 .centratura {
-  padding: 0 10%;
+  padding: 0 18%;
   width: 100%;
 }
 
@@ -136,7 +136,7 @@ nav {
 
 /*centratura sfalsata sezione*/
 #ab-centra {
-  margin-left: 10%;
+  margin-left: 18%;
   border: 1px solid black;
   border: 1px solid black;
   height: 700px;
@@ -147,14 +147,34 @@ nav {
 #about-text {
   width: 40%;
   border: 1px solid black;
-  display: flex;
-  align-items: center;
+  padding: 10% 0;
 }
 
 /*contenitore testo sez sinistra about*/
 #text-about-cont {
-  width: 50%;
+  width: 100%;
 }
+
+#text-about-cont h1 {
+  width: 100%;
+  font-size: 50px;
+}
+
+#cont-about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.ab-cell {
+  width: 45%;
+  min-height: 200px;
+  border: 1px solid black;
+  padding: 10px 0;
+}
+
 /*aside right con immagine about*/
 #about-img {
   width: 60%;
@@ -162,4 +182,124 @@ nav {
   background-size: cover;
   background-position: center;
   border: 1px solid black;
+}
+
+/*services section*/
+#services {
+  width: 100%;
+  min-height: 800px;
+  background-color: #19191f;
+  display: flex;
+  align-items: center;
+}
+
+#see-all-services {
+  display: flex;
+}
+
+/*contenitore cards services*/
+#cont-cards-serv {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* debug */
+  background-color: blue;
+}
+
+/*cards services griglia*/
+.cards-services {
+  width: calc(95% / 3);
+  min-height: 300px;
+  border: 1px solid black;
+  margin: 1% 0;
+}
+
+/* sezione pricing */
+#pricing {
+  width: 100%;
+  /* min-height: 800px; */
+  background-color: #e3e7df;
+  display: flex;
+  align-items: center;
+}
+
+/* contenitore testo pricing  */
+#cont-text-pricing {
+  text-align: center;
+}
+
+/*contenitore price cards*/
+#cont-cards-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*debug*/
+  /* background-color: chocolate; */
+  height: 400px;
+}
+
+.price-cards {
+  width: 32%;
+  margin: 1% 0;
+  border-radius: 8px;
+  /*debug*/
+  border: 1px solid black;
+  height: 300px;
+  background-color: white;
+}
+
+/* sezione news */
+#news {
+  width: 100%;
+  background-color: white;
+}
+
+#see-all-news {
+  display: flex;
+}
+
+#cards-news-cont {
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.news-cards {
+  width: 32%;
+  border-radius: 8px;
+  border: 1px solid black;
+  min-height: 280px;
+  background-color: crimson;
+  margin: 1% 0;
+  display: flex;
+
+  align-items: flex-end;
+}
+
+.first-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.45)),
+    url(../img/news-1.jpg);
+  background-size: cover;
+}
+
+.second-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.45)),
+    url(../img/news-2.jpg);
+  background-size: cover;
+}
+
+.third-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.45)),
+    url(../img/news-3.jpg);
+  background-size: cover;
+}
+
+.text-img-news {
+  padding: 15px;
+  color: white;
+  text-align: center;
 }
