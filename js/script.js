@@ -1,7 +1,7 @@
 var app = new Vue({
   el: "#app",
-
   data: {
+    //indice dropdown
     indexDrop: "",
     //struttura dati header
     header: [
@@ -20,7 +20,7 @@ var app = new Vue({
         name: "ABOUT",
         selected: false,
         dropdown: [
-          "ABout the Comapany",
+          "About the Comapany",
           "Us and You",
           "Our Business",
           "Contact Us",
@@ -81,14 +81,14 @@ var app = new Vue({
     ],
   },
   methods: {
+    //funzione per aprire singolo dropdown nav e richiuderlo automaticamente all'apertura di un altro
     clickDrop(voci, index) {
       this.indexDrop = index;
       voci.selected = !voci.selected;
-      console.log(this.header);
-      console.log(this.indexDrop);
     },
+    //funzione per chiudere automaticamente dropdown uscendo da una voce all'altra o uscendo solo dalla voce
     closeDrop() {
-      voci.selected;
+      this.indexDrop = "";
     },
   },
 });

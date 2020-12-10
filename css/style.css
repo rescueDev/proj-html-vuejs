@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .hidden {
@@ -160,6 +161,7 @@ nav {
 
 .navoci:hover {
   background-color: #038483;
+  border-radius: 5px;
 }
 
 #drop-container {
