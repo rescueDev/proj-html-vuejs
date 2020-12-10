@@ -116,30 +116,41 @@ nav {
 }
 
 #voci-nav {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
 
 .navoci {
-  width: 20%;
-  height: 20px;
+  width: 22%;
+  height: 40px;
+  padding: 8px;
+}
+
+.name-nav-voci {
+  padding: 5px 0;
+  text-align: center;
+}
+.navoci:hover {
+  background-color: #038483;
 }
 
 #drop-container {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0px;
+
   /* display: none; */
 }
 
 .dropdown {
   list-style: none;
-  padding: 5px 0;
-  border: 1px solid slategray;
+  margin: 5px 0px;
+  border-bottom: 1px solid slategray;
 }
 
 .dropdown a {
   text-decoration: none;
+
   color: white;
 }
 

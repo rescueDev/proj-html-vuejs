@@ -54,7 +54,7 @@
             <!-- Lista nav con Vue -->
             <aside id="voci-nav">
               <div class="navoci" v-for="voci in header">
-                {{voci.name}}
+                <h5 class="name-nav-voci">{{voci.name}}</h5>
                 <ul id="drop-container">
                   <li class="dropdown" v-for="vocidrop in voci.dropdown">
                     <a href="">{{vocidrop}}</a>

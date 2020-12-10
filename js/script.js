@@ -31,6 +31,10 @@ var app = new Vue({
         name: "BLOG",
         dropdown: ["News", "Newsletter", "Unsubscribe", "Get in Touch"],
       },
+      {
+        name: "GET IN TOUCH",
+        dropdown: ["Your Subsciption", "Get one month", "Pricing List"],
+      },
     ],
     //struttura dati footer
     footer: [
