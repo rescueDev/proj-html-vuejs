@@ -53,9 +53,16 @@
             </aside>
             <!-- Lista nav con Vue -->
             <aside id="voci-nav">
-              <div class="navoci" v-for="voci in header">
+              <div
+                class="navoci"
+                v-for="(voci, index) in header"
+                @click="clickDrop(voci , index)"
+              >
                 <h5 class="name-nav-voci">{{voci.name}}</h5>
-                <ul id="drop-container">
+                <ul
+                  :class="indexDrop === index ? 'show' : 'hidden' "
+                  id="drop-container"
+                >
                   <li class="dropdown" v-for="vocidrop in voci.dropdown">
                     <a href="">{{vocidrop}}</a>
                   </li>
@@ -160,24 +167,56 @@
         <main class="centratura">
           <div id="services-text">
             <h3 class="intestazione">OUR BUSINESS AREAS</h3>
-            <h1>Excellence in Services</h1>
+            <h1 class="titolo-sez-white">Excellence in Services</h1>
           </div>
           <div id="see-all-services">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-              aspernatur blanditiis pariatur assumenda voluptate vel
-              consequuntur
+              We are leaders in providing consultancy services with a set of
+              cutting-edge technologies and a team of experienced and renowned
+              professionals. These are some options that you can hire.
             </p>
             <button>SEE ALL</button>
           </div>
           <!-- contenitore cards services -->
           <div id="cont-cards-serv">
-            <div class="cards-services"></div>
-            <div class="cards-services"></div>
-            <div class="cards-services"></div>
-            <div class="cards-services"></div>
-            <div class="cards-services"></div>
-            <div class="cards-services"></div>
+            <div class="cards-services">
+              <i class="fas fa-network-wired"></i>
+              <h3>Audit & Assurance</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="read-more-button">
+                <a href="">READ MORE</a>
+              </button>
+            </div>
+            <div class="cards-services">
+              <i class="fas fa-briefcase"></i>
+              <h3>Financial Advisory</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="read-more-button"><a href="">READ MORE</a></button>
+            </div>
+            <div class="cards-services">
+              <i class="far fa-chart-bar"></i>
+              <h3>Analytics M&A</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="read-more-button"><a href="">READ MORE</a></button>
+            </div>
+            <div class="cards-services">
+              <i class="fas fa-plane-departure"></i>
+              <h3>Middle Marketing</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="read-more-button"><a href="">READ MORE</a></button>
+            </div>
+            <div class="cards-services">
+              <i class="fas fa-globe-europe"></i>
+              <h3>Legal Consulting</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="read-more-button"><a href="">READ MORE</a></button>
+            </div>
+            <div class="cards-services">
+              <i class="far fa-hdd"></i>
+              <h3>Regulatory Risk</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="read-more-button"><a href="">READ MORE</a></button>
+            </div>
           </div>
         </main>
       </section>

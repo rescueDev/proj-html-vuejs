@@ -6,10 +6,18 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .alone {
   background-color: #39c4c622;
   padding: 5px;
-  color: #038483;
+
   border-radius: 5px;
 }
 
@@ -20,8 +28,19 @@
 }
 
 .intestazione {
-  color: #038483;
+  color: #39c4c6;
   font-size: 14px;
+  margin: 20px 0;
+}
+
+.titolo-sez-white {
+  font-size: 40px;
+  color: white;
+}
+
+.titolo-sez-black {
+  font-size: 40px;
+  color: black;
 }
 
 /* contenitore generale e app Vue */
@@ -147,7 +166,6 @@ nav {
   width: 100%;
   margin: 10px 0px;
   background-color: #24333d;
-  /* display: none; */
 }
 
 .dropdown {
@@ -252,8 +270,7 @@ nav {
 /*centratura sfalsata sezione*/
 #ab-centra {
   margin-left: 18%;
-  border: 1px solid black;
-  border: 1px solid black;
+
   height: 700px;
   display: flex;
 }
@@ -261,7 +278,6 @@ nav {
 /*aside testo about left*/
 #about-text {
   width: 40%;
-  border: 1px solid black;
   padding: 10% 0;
 }
 
@@ -313,7 +329,6 @@ nav {
   background-image: url(../img/about-3.jpg);
   background-size: cover;
   background-position: center;
-  border: 1px solid black;
 }
 
 /*services section*/
@@ -325,9 +340,19 @@ nav {
   align-items: center;
 }
 
+#services-text {
+  padding: 20px 0;
+}
+
 #see-all-services {
   display: flex;
   justify-content: space-between;
+  color: #a2adae;
+  padding-bottom: 40px;
+}
+
+#see-all-services p {
+  width: 70%;
 }
 
 /*contenitore cards services*/
@@ -338,7 +363,6 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   /* debug */
-  background-color: blue;
 }
 
 /*cards services griglia*/
@@ -347,6 +371,20 @@ nav {
   min-height: 300px;
   border: 1px solid black;
   margin: 1% 0;
+  background-color: #1e2223;
+  padding: 30px;
+}
+
+.cards-services i {
+  font-size: 30px;
+  color: #39c4c6;
+  padding: 20px 0;
+}
+
+.cards-services h3 {
+  font-size: 20px;
+  color: white;
+  padding: 10px 0;
 }
 
 /* sezione pricing */

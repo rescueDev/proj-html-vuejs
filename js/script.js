@@ -1,10 +1,13 @@
 var app = new Vue({
   el: "#app",
+
   data: {
+    indexDrop: "",
     //struttura dati header
     header: [
       {
         name: "HOME",
+        selected: false,
         dropdown: [
           "Lead Customer Info",
           "Scope",
@@ -15,6 +18,7 @@ var app = new Vue({
       },
       {
         name: "ABOUT",
+        selected: false,
         dropdown: [
           "ABout the Comapany",
           "Us and You",
@@ -25,14 +29,17 @@ var app = new Vue({
       },
       {
         name: "PRICING",
+        selected: false,
         dropdown: ["Your Subsciption", "Get one month", "Pricing List"],
       },
       {
         name: "BLOG",
+        selected: false,
         dropdown: ["News", "Newsletter", "Unsubscribe", "Get in Touch"],
       },
       {
         name: "GET IN TOUCH",
+        selected: false,
         dropdown: ["Your Subsciption", "Get one month", "Pricing List"],
       },
     ],
@@ -72,5 +79,16 @@ var app = new Vue({
         ],
       },
     ],
+  },
+  methods: {
+    clickDrop(voci, index) {
+      this.indexDrop = index;
+      voci.selected = !voci.selected;
+      console.log(this.header);
+      console.log(this.indexDrop);
+    },
+    closeDrop() {
+      voci.selected;
+    },
   },
 });
