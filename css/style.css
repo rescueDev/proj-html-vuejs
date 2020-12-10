@@ -20,13 +20,20 @@
   height: 40px;
   /* debug */
   background-color: #24333d;
+  font-size: 14px;
 }
 
 /*aside orari header */
 #orari {
   width: 30%;
-  color: white;
+  color: #a2adae;
   display: flex;
+  align-items: center;
+}
+
+#orari i {
+  font-size: 12px;
+  padding-right: 5px;
 }
 
 /* contenitore info dentro header */
@@ -38,8 +45,8 @@
 }
 
 #contatti {
-  width: 35%;
-  color: white;
+  width: 40%;
+  color: #a2adae;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,6 +56,24 @@
 #mail,
 #social {
   display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+/*icone contatti*/
+#contatti i {
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+/*social header*/
+#social {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#social i {
+  font-size: 12px;
 }
 
 /*sezione jumbo*/
