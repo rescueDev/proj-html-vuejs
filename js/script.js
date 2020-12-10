@@ -1,6 +1,38 @@
 var app = new Vue({
   el: "#app",
   data: {
+    //struttura dati header
+    header: [
+      {
+        name: "HOME",
+        dropdown: [
+          "Lead Customer Info",
+          "Scope",
+          "The Company",
+          "Business Area",
+          "Pricing",
+        ],
+      },
+      {
+        name: "ABOUT",
+        dropdown: [
+          "ABout the Comapany",
+          "Us and You",
+          "Our Business",
+          "Contact Us",
+          "More",
+        ],
+      },
+      {
+        name: "PRICING",
+        dropdown: ["Your Subsciption", "Get one month", "Pricing List"],
+      },
+      {
+        name: "BLOG",
+        dropdown: ["News", "Newsletter", "Unsubscribe", "Get in Touch"],
+      },
+    ],
+    //struttura dati footer
     footer: [
       {
         name: "About",
