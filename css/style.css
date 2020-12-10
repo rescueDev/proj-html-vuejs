@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+.alone {
+  background-color: #39c4c622;
+
+  padding: 8px;
+}
+
 /* contenitore generale e app Vue */
 
 /* centratura ricorrente pagina */
@@ -148,8 +154,23 @@ nav {
 .obj {
   width: 30%;
   min-height: 200px;
-  border: 1px solid black;
+  border-radius: 10px;
   background-color: white;
+  padding: 15px;
+}
+
+/*icone obj*/
+.obj i {
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: #e3e7df;
+  color: #038483;
+  padding: 10px;
+}
+
+.obj h3,
+.obj p {
+  padding: 10px 0;
 }
 
 /* sezione about */
