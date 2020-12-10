@@ -8,8 +8,13 @@
 
 .alone {
   background-color: #39c4c622;
-
   padding: 8px;
+}
+
+.nexgen {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 30px;
 }
 
 /* contenitore generale e app Vue */
@@ -97,10 +102,45 @@
 
 /* nav bar*/
 nav {
-  /* display: flex;
-  align-self: flex-start; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 60px;
-  background-color: blue;
+  color: white;
+
+  /* background-color: blue; */
+}
+
+#logo-nav {
+  width: 30%;
+}
+
+#voci-nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navoci {
+  width: 20%;
+  height: 20px;
+}
+
+#drop-container {
+  width: 100%;
+  padding: 10px 0;
+  /* display: none; */
+}
+
+.dropdown {
+  list-style: none;
+  padding: 5px 0;
+  border: 1px solid slategray;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: white;
 }
 
 #jumbotron {

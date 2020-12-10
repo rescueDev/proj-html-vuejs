@@ -49,12 +49,19 @@
           <!-- nav bar trasparente in jumbo -->
           <nav>
             <aside id="logo-nav">
-              <img src="" alt="" />
+              <h2><span class="alone nexgen">NEX</span>GEN</h2>
             </aside>
             <!-- Lista nav con Vue -->
-            <ul>
-              <li></li>
-            </ul>
+            <aside id="voci-nav">
+              <div class="navoci" v-for="voci in header">
+                {{voci.name}}
+                <ul id="drop-container">
+                  <li class="dropdown" v-for="vocidrop in voci.dropdown">
+                    <a href="">{{vocidrop}}</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
           </nav>
           <main id="jumbotron">
             <div id="jumbo-text">
@@ -353,9 +360,6 @@
                 <li v-for="cat in cards.categories">{{cat}}</li>
               </ul>
             </div>
-
-            <!-- <div class="cards-foot"></div>
-            <div class="cards-foot"></div> -->
           </div>
         </main>
       </footer>
