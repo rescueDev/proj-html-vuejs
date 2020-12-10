@@ -17,7 +17,7 @@
 /* header */
 #header {
   width: 100%;
-  height: 60px;
+  height: 40px;
   /* debug */
   background-color: #24333d;
 }
@@ -31,7 +31,7 @@
 
 /* contenitore info dentro header */
 #container-info {
-  height: 60px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -335,4 +335,128 @@ nav {
 }
 #container-form {
   width: 40%;
+}
+
+/* sezione get in touch */
+#get-touch {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+/*contenitore degli aside get in touch*/
+#cont-send-mess {
+  width: 100%;
+  display: flex;
+}
+
+/*aside get in touch left*/
+#message-form {
+  width: 70%;
+  /*debug*/
+  min-height: 200px;
+  border: 1px solid black;
+}
+
+#cont-message {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*form messaggi*/
+.input-wrap input,
+#cont-message select {
+  width: 100%;
+  height: 40px;
+  border-radius: 2px;
+}
+
+#cont-message select {
+  width: 100%;
+}
+
+/*classe wrapper input e select*/
+.input-wrap {
+  width: 48%;
+  height: 40px;
+  margin: 2% 0;
+}
+
+/*primo div wrapper con icona in position absolute*/
+#name-div {
+  position: relative;
+}
+/*icona in input name*/
+.input-wrap img {
+  position: absolute;
+  top: 0.5em;
+  left: 90%;
+}
+/*input name padding testo*/
+#name-input {
+  padding-right: 30px;
+}
+/*textarea messaggio*/
+#messaggio {
+  width: 100%;
+}
+
+/*aside destro al form*/
+#contact-message {
+  width: 30%;
+  /*debug*/
+  min-height: 200px;
+  border: 1px solid black;
+}
+
+/*linea contatto*/
+.cont-touch {
+  display: flex;
+  padding: 10px 0;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  min-height: 600px;
+  background-color: #19191f;
+  display: flex;
+  align-items: center;
+}
+
+#cont-foot-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cards-foot {
+  width: 19%;
+  /*debug*/
+  min-height: 300px;
+  border: 1px solid white;
+}
+
+.cont-footer {
+  display: flex;
+  padding: 10px 0;
+}
+
+/*sub footer*/
+#sub-footer {
+  width: 100%;
+  height: 80px;
+  background-color: #111117;
+}
+
+/*contenitore crediti subfooter*/
+#cont-credits {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
