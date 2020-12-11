@@ -389,9 +389,14 @@
           </div>
           <!-- contenitore cards news -->
           <div id="cards-news-cont">
-            <div v-for="cards in cardsNews" class="news-cards first-img">
+            <div
+              v-for="cards in cardsNews"
+              :class="{'first-img' : cards.id == 0,'second-img': cards.id == 1, 'third-img':cards.id == 2}"
+              class="news-cards"
+            >
               <div class="author-news">
                 <i class="far fa-user"></i>
+                <p>{{cards[0]}}</p>
                 <p>{{cards.name}}</p>
                 <i class="far fa-clock"></i>
                 <p>{{cards.date}}</p>

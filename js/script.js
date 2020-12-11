@@ -85,19 +85,19 @@ var app = new Vue({
         name: "Andrea Miller",
         date: "2 Days Ago",
         preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        hover: false,
+        id: 0,
       },
       {
         name: "Lorenzo Muller",
         date: "4 Days Ago",
         preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        hover: false,
+        id: 1,
       },
       {
         name: "Barney Stinson",
         date: "Yesterday",
         preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        hover: false,
+        id: 2,
       },
     ],
   },
@@ -114,6 +114,5 @@ var app = new Vue({
       this.indexDrop = "";
       console.log("ciao");
     },
-    overcards() {},
   },
 });
