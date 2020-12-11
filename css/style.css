@@ -633,9 +633,7 @@ nav {
 .news-cards {
   width: 32%;
   border-radius: 8px;
-  border: 1px solid black;
   min-height: 280px;
-  background-color: crimson;
   margin: 1% 0;
   display: flex;
   position: relative;
