@@ -80,6 +80,26 @@ var app = new Vue({
         ],
       },
     ],
+    cardsNews: [
+      {
+        name: "Andrea Miller",
+        date: "2 Days Ago",
+        preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        hover: false,
+      },
+      {
+        name: "Andrea Miller",
+        date: "2 Days Ago",
+        preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        hover: false,
+      },
+      {
+        name: "Andrea Miller",
+        date: "2 Days Ago",
+        preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        hover: false,
+      },
+    ],
   },
   methods: {
     //funzione per aprire singolo dropdown nav e richiuderlo automaticamente all'apertura di un altro
@@ -94,5 +114,6 @@ var app = new Vue({
       this.indexDrop = "";
       console.log("ciao");
     },
+    overcards() {},
   },
 });
