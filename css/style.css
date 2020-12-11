@@ -610,6 +610,11 @@ nav {
   color: white;
   display: flex;
   width: 100%;
+  font-size: 14px;
+}
+
+.author-news i {
+  margin: 0 5px;
 }
 
 /*cards news*/
@@ -623,6 +628,17 @@ nav {
   display: flex;
   position: relative;
   align-items: flex-end;
+}
+
+.author-news,
+.preview {
+  display: none;
+  margin: 10px 5px;
+}
+
+.news-cards:hover .author-news,
+.news-cards:hover .preview {
+  display: flex;
 }
 
 /*background immagini delle cards in news*/

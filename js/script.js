@@ -88,14 +88,14 @@ var app = new Vue({
         hover: false,
       },
       {
-        name: "Andrea Miller",
-        date: "2 Days Ago",
+        name: "Lorenzo Muller",
+        date: "4 Days Ago",
         preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         hover: false,
       },
       {
-        name: "Andrea Miller",
-        date: "2 Days Ago",
+        name: "Barney Stinson",
+        date: "Yesterday",
         preview: " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         hover: false,
       },
