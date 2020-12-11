@@ -24,7 +24,8 @@
 .nexgen {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  padding-left: 30px;
+  padding-left: 20px;
+  color: #00a6a6;
 }
 
 .intestazione {
@@ -759,9 +760,10 @@ nav {
 footer {
   width: 100%;
   min-height: 600px;
-  background-color: #19191f;
+  background-color: #111117;
   display: flex;
   align-items: center;
+  color: #c0c3d0;
 }
 
 #cont-foot-menu {
@@ -770,11 +772,62 @@ footer {
   justify-content: space-between;
 }
 
+#contact-footer {
+  padding: 8px 0;
+}
+#text-foot-card {
+  padding: 5px 0;
+}
+
+#text-foot-card p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+#contact-footer p {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/*cards generali footer*/
 .cards-foot {
-  width: 19%;
+  width: 22%;
+  border-radius: 8px;
   /*debug*/
-  min-height: 300px;
-  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-name {
+  color: white;
+}
+
+/*cards popolate da link vue footer*/
+.vue-cards-footer {
+  padding: 20px;
+  background-color: #19191f;
+}
+
+#get-in-touch {
+  padding: 10px 0px;
+}
+
+/*lista generata in vue link footer*/
+.lista-link-footer {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.lista-link-footer a {
+  text-decoration: none;
+  color: #c0c3d0;
+  font-size: 12px;
+}
+
+/*link generati in vue footer*/
+.lista-link-footer li {
+  padding: 3px 0;
 }
 
 .cont-footer {

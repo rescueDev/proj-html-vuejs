@@ -530,30 +530,32 @@
           <div id="cont-foot-menu">
             <div class="cards-foot foot-c1">
               <div id="text-foot-card">
-                <h2><span class="alone">NEX</span>GEN</h2>
-                <h4>A Functional HTML Template for Corporate & Business</h4>
+                <h3><span class="alone nexgen">NEX</span>GEN</h3>
+                <p>A Functional HTML Template for Corporate & Business</p>
               </div>
               <div id="contact-footer">
                 <div class="cont-footer">
                   <i class="fa fa-phone-alt"></i>
-                  <h5>+1 (305) 1234-5678</h5>
+                  <p>+1 (305) 1234-5678</p>
                 </div>
                 <div class="cont-footer">
                   <i class="fas fa-envelope"></i>
-                  <h5>hello@example.com</h5>
+                  <p>hello@example.com</p>
                 </div>
                 <div class="cont-footer">
                   <i class="fas fa-map-marker-alt"></i>
-                  <h5>Main Avenue, 987</h5>
+                  <p>Main Avenue, 987</p>
                 </div>
               </div>
-              <button>GET IN TOUCH</button>
+              <div id="get-in-touch"><a class="a-button">GET IN TOUCH</a></div>
             </div>
             <!-- Parte footer da fare in VUE -->
-            <div v-for="cards in footer" class="cards-foot">
-              <h3>{{cards.name}}</h3>
-              <ul>
-                <li v-for="cat in cards.categories">{{cat}}</li>
+            <div v-for="cards in footer" class="cards-foot vue-cards-footer">
+              <h3 class="card-name">{{cards.name}}</h3>
+              <ul class="lista-link-footer">
+                <li v-for="cat in cards.categories">
+                  <a href="">> {{cat}}</a>
+                </li>
               </ul>
             </div>
           </div>
