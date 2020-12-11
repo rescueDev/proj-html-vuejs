@@ -66,6 +66,13 @@
   font-size: 14px;
 }
 
+/*rimuovo da tutti input select e textarea la selezione bordata*/
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
 /*buttons on hover*/
 button:hover {
   background-color: #038483;
@@ -168,7 +175,7 @@ button:hover {
 /*sezione jumbo*/
 #jumbo {
   width: 100%;
-  height: 700px;
+  height: calc(100vh - 40px);
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -643,19 +650,19 @@ nav {
 
 /*background immagini delle cards in news*/
 .first-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.45)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.45)),
     url(../img/news-1.jpg);
   background-size: cover;
 }
 
 .second-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.45)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.45)),
     url(../img/news-2.jpg);
   background-size: cover;
 }
 
 .third-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.45)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.45)),
     url(../img/news-3.jpg);
   background-size: cover;
 }
