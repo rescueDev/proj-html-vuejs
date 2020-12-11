@@ -1,5 +1,4 @@
-/* regole generali */
-
+/* regole generali struttura pagina */
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +6,23 @@
   font-family: "Inter", sans-serif;
 }
 
+/*========> REGOLE DI STILE RICORRENTI NELLA PAGINA <======== */
+
+/*classe hidden vue*/
 .hidden {
   display: none;
 }
-
+/*classe show vue*/
 .show {
   display: block;
 }
-
+/*alone azzurro attorno a titoli sezioni e nex*/
 .alone {
   background-color: #39c4c622;
   padding: 5px;
   border-radius: 5px;
 }
-
+/*stile span 'nex' logo footer e header*/
 .nexgen {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -28,38 +30,49 @@
   color: #00a6a6;
 }
 
+/*colore h3 intestazione sez*/
 .intestazione {
   color: #00a6a6;
   font-size: 14px;
   margin: 20px 0;
 }
 
+/*titolo con sez sfondo nero*/
 .titolo-sez-white {
   font-size: 40px;
   color: white;
 }
 
+/*titolo con sez sfondo bianco*/
 .titolo-sez-black {
   font-size: 40px;
   color: #058283;
 }
 
+/*stile titoli sezioni*/
 .font-title {
   font-size: 40px;
   color: #21333e;
 }
 
+/*colore p delle sezioni*/
 .greytext {
   /* color: #606d75; */
   color: #606d75;
 }
+
+/*font p intestazioni */
+.p-font-int {
+  font-size: 14px;
+}
+
 /*buttons on hover*/
 button:hover {
   background-color: #038483;
   border-radius: 5px;
 }
 
-/*hover su cards*/
+/*stile cards e hover su cards*/
 .cards {
   transition: 0.5s ease;
 }
@@ -80,6 +93,12 @@ button:hover {
   width: 100%;
 }
 
+/*========> FINE REGOLE DI STILE RICORRENTI NELLA PAGINA <======== */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* =====> REGOLE SPECIFICHE <====== */
+
 /* header */
 #header {
   width: 100%;
@@ -97,6 +116,7 @@ button:hover {
   align-items: center;
 }
 
+/*icone in orari*/
 #orari i {
   font-size: 12px;
   padding-right: 5px;
@@ -110,6 +130,7 @@ button:hover {
   justify-content: space-between;
 }
 
+/*aside sx header contatti*/
 #contatti {
   width: 45%;
   color: #a2adae;
@@ -118,6 +139,7 @@ button:hover {
   justify-content: space-between;
 }
 
+/*inline contenuto contatti header*/
 #phone,
 #mail,
 #social {
@@ -138,6 +160,7 @@ button:hover {
   justify-content: space-between;
 }
 
+/*icone social*/
 #social i {
   font-size: 12px;
 }
@@ -162,14 +185,14 @@ nav {
   align-items: center;
   height: 60px;
   color: white;
-
-  /* background-color: blue; */
 }
 
+/*contenitore logo nav*/
 #logo-nav {
   width: 30%;
 }
 
+/*voci nav dinamicizzate*/
 #voci-nav {
   width: 60%;
   display: flex;
@@ -188,12 +211,12 @@ nav {
   padding: 5px 0;
   text-align: center;
 }
-
+/*effetto on hover alle voci*/
 .navoci:hover {
   background-color: #038483;
   border-radius: 5px;
 }
-
+/* contenitore dropdown*/
 #drop-container {
   width: max-content;
   border-radius: 5px;
@@ -206,22 +229,23 @@ nav {
   text-align: center;
 }
 
+/*singola linea del dropdown*/
 .dropdown {
   list-style: none;
   padding: 5px 5px;
   border-bottom: 1px solid slategray;
 }
-
+/*hover effect on dropdown element*/
 .dropdown:hover {
   background-color: #72a2a355;
 }
-
+/*style a*/
 .dropdown a {
   text-decoration: none;
-
   color: white;
 }
 
+/*sezione jumbotron*/
 #jumbotron {
   width: 100%;
   height: 600px;
@@ -237,6 +261,7 @@ nav {
   margin: 0 auto;
 }
 
+/*stili testo jumbotron*/
 .jumbo-subtext {
   color: #b6b9c5;
 }
@@ -257,6 +282,7 @@ nav {
   margin: 20px;
 }
 
+/*classe ricorrente button v1*/
 .a-button {
   background-color: none;
   border: 1px solid #038483;
@@ -290,7 +316,6 @@ nav {
 /*singole schede obiettivi*/
 .obj {
   width: 31%;
-  /* min-height: 220px; */
   border-radius: 10px;
   background-color: white;
   padding: 30px;
@@ -339,7 +364,7 @@ nav {
 
 /*contenitore testo sez sinistra about*/
 #text-about-cont {
-  width: 100%;
+  width: 90%;
 }
 
 #text-about-cont h1 {
@@ -347,10 +372,16 @@ nav {
   font-size: 40px;
   padding: 15px 0;
   font-weight: bolder;
+  color: #21333e;
+}
+
+#text-about-cont p {
+  width: 100%;
+  font-size: 14px;
 }
 
 #cont-about {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -373,10 +404,11 @@ nav {
 .ab-cell h3 {
   margin-bottom: 10px;
   font-size: 22px;
+  color: #21333e;
 }
 
 .ab-cell p {
-  color: #111117;
+  font-size: 14px;
 }
 
 /*aside right con immagine about*/
