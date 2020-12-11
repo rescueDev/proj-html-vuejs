@@ -1,6 +1,7 @@
 var app = new Vue({
   el: "#app",
   data: {
+    closeAllDrop: true,
     //indice dropdown
     indexDrop: "",
     //struttura dati header
@@ -87,8 +88,11 @@ var app = new Vue({
       voci.selected = !voci.selected;
     },
     //funzione per chiudere automaticamente dropdown uscendo da una voce all'altra o uscendo solo dalla voce
-    closeDrop() {
+    closeDrop(voci, index) {
+      this.indexDrop = index;
+      voci.selected = !voci.selected;
       this.indexDrop = "";
+      console.log("ciao");
     },
   },
 });

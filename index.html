@@ -67,8 +67,8 @@
               <div
                 class="navoci"
                 v-for="(voci, index) in header"
-                @click="clickDrop(voci , index) "
-                @mouseleave="closeDrop"
+                @mouseover="clickDrop(voci , index) "
+                @mouseleave="closeDrop(voci, index)"
               >
                 <h5 class="name-nav-voci">{{voci.name}}</h5>
                 <ul
