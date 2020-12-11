@@ -534,7 +534,7 @@ nav {
 }
 
 .price {
-  color: #00a6a6;
+  color: #058283;
   font-size: 30px;
   margin: 10px 0;
 }
@@ -568,6 +568,9 @@ nav {
   justify-content: space-between;
   padding: 8px;
   font-size: 14px;
+}
+.price-feautures i {
+  color: #058283;
 }
 
 /* sezione news */
@@ -654,6 +657,10 @@ nav {
   width: 100%;
   min-height: 400px;
   background-image: url(../img/bg-1.jpg);
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
   display: flex;
   align-items: center;
 }
@@ -675,6 +682,11 @@ nav {
   justify-content: space-around;
 }
 
+#newsletter-text p {
+  padding-top: 15px;
+  color: #e3e7df;
+}
+
 #container-form {
   width: 40%;
   display: flex;
@@ -683,7 +695,7 @@ nav {
 }
 
 .input-newsletter {
-  background-color: #c2cbcb;
+  background-color: #e3e7df;
   opacity: 0.3;
   height: 40px;
   width: 80%;
