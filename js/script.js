@@ -72,7 +72,7 @@ var app = new Vue({
         categories: [
           "Responsibility",
           "Terms of Use",
-          "ABout Cookies",
+          "About Cookies",
           "Privacy Policy",
           "Accessibility",
           "Information",
