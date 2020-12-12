@@ -227,6 +227,7 @@ nav {
 .navoci:hover {
   background-color: #038483;
   border-radius: 5px;
+  cursor: pointer;
 }
 /* contenitore dropdown*/
 #drop-container {
@@ -606,6 +607,7 @@ nav {
   border-radius: 5px;
   color: white;
   padding: 10px 15px;
+  text-decoration: none;
 }
 
 /*contenitore cards news*/
