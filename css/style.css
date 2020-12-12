@@ -619,16 +619,23 @@ nav {
 
 .author-news {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   display: flex;
-  width: 100%;
+  width: 90%;
   font-size: 14px;
 }
 
 .author-news i {
   margin: 0 5px;
+}
+
+.text-img-news h3 {
+  padding: 10px 0;
 }
 
 /*cards news*/
@@ -645,7 +652,6 @@ nav {
 .author-news,
 .preview {
   display: none;
-  margin: 10px 5px;
 }
 
 .news-cards:hover .author-news,
