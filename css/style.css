@@ -620,18 +620,23 @@ nav {
 .author-news {
   position: absolute;
   top: 10%;
-  left: 0;
+  left: 10%;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   color: white;
   display: flex;
-  width: 90%;
   font-size: 14px;
 }
 
 .author-news i {
-  margin: 0 5px;
+  margin-right: 5px;
+}
+
+.aut-date,
+.aut-name {
+  display: flex;
+  margin: 0 10px;
 }
 
 .text-img-news h3 {
