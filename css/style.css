@@ -862,6 +862,7 @@ nav {
   border: 1px solid #038483;
   border-radius: 5px;
   padding: 10px;
+  text-decoration: none;
 }
 
 .cont-touch i {
